@@ -22,7 +22,7 @@ export function MovieDetails() {
     return <Spinner />;
   }
 
-  const imagenUrl = "https:image.tmdb.org/t/p/w500" + movie.poster_path;
+  const imagenUrl = process.env.REACT_APP_IMG + movie.poster_path;
 
   return (
     <div className={styles.detailsContainer}>
